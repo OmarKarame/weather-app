@@ -32,14 +32,16 @@ const Card = ({ weatherData }) => {
   }, [weatherData])
   return (
     <div className='card'>
-        <h2>{weatherData.location.name}</h2>
+      <div className='card__heading'>
+        <h1>{weatherData.location.name}</h1>
         <img src={weatherData.current.condition.icon} alt="Display weather condition" />
-        <h3>{weatherData.current.condition.text}</h3>
+        <h2>{weatherData.current.condition.text}</h2>
+      </div>
         <p>Temperature: {weatherData.current.tempC}°C</p>
-        <p>{day}</p>
-        <p>{weatherData.current.windKph}</p>
-        <p>{weatherData.current.windDirection}</p>
-        <p>{weatherData.current.humidity}</p>
+        <p>Day: {day}</p>
+        <p>Wind (Km/h): {weatherData.current.windKph}</p>
+        <p>Wind dircetion: {weatherData.current.windDirection}</p>
+        <p>Humidity: {weatherData.current.humidity}</p>
     </div>
   )
 }

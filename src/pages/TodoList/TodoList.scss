@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap');
+.bar{
+
+    display:flex;
+    justify-content: space-between;
+    border:2px solid black;
+    border-radius:4%;
+    padding:0.5rem;
+
+    .bar__input{
+        width:80%;
+        border: none;
+        outline: none;      
+    }
+}
+
+.list{
+    margin-top: 1rem;
+    font-family: "Jost"
+}

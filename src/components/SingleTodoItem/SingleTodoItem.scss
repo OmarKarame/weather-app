@@ -1,0 +1,21 @@
+.task{
+    display:flex;
+    justify-content: space-between;
+    border:2px solid black;
+    border-radius: 4%;;
+    padding:1rem;
+    margin-top:1rem;
+
+    .task__first-section{
+        display:flex;
+        gap:1rem;
+    }
+
+    .task__second-section{
+        display:flex;
+    }
+
+    .task__check{
+        text-decoration: line-through;
+    }
+}
