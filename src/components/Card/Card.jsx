@@ -38,7 +38,6 @@ const Card = ({ weatherData }) => {
         <h2>{weatherData.current.condition.text}</h2>
       </div>
         <p>Temperature: {weatherData.current.tempC}°C</p>
-        <p>Day: {day}</p>
         <p>Wind (Km/h): {weatherData.current.windKph}</p>
         <p>Wind dircetion: {weatherData.current.windDirection}</p>
         <p>Humidity: {weatherData.current.humidity}</p>
