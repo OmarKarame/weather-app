@@ -36,7 +36,7 @@ const WeatherDisplayContainer = () => {
 
     const getWeatherData = async () => {
         getCurrentLocation();
-        const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=e1881e33bbed4fa5b5a142655220911&q=${userLocation.latitude},${userLocation.longitude}&aqi=no`)
+        const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=e1881e33bbed4fa5b5a142655220911&q=${userLocation.latitude},${userLocation.longitude}&aqi=no`)
         const data = await res.json();
         setWeatherData({
             location: {
